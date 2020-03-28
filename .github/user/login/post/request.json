@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "properties": {
+    "userName": {
+      "type": "string"
+    },
+    "password": {
+      "type": "integer"
+    },
+    "phoneNumber": {
+      "description": "Age in years",
+      "type": "integer"
+    }
+  },
+  "required": ["userName", "password"]
+}

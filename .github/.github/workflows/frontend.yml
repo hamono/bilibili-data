@@ -1,0 +1,27 @@
+name: build and push to bilibili
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: build
+        uses: wu-yu-xuan/json-schema-to-interface@action
+        with:
+          output_dir: ./frontend-output
+          input_dir: ./
+      - name: push
+        uses: wu-yu-xuan/deploy-github-pages@action
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          commit_message: ${{ github.event.head_commit.message }}
+          publish_repo: hamono/bilibili_text
+          publish_branch: master
+          source_dir: ./frontend-output
+          dest_dir: ./src/useFetch/api/

@@ -1,0 +1,11 @@
+{"type":"object",
+    "properties": {
+        "inter": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+    },
+    "required":["inter"]
+    }
+    }
