@@ -1,11 +1,9 @@
-{"type":"object",
-"properties": {
-    "inter": {
-    "type": "array",
-    "items": {
+{
+  "type": "object",
+  "properties": {
+    "id": {
       "type": "string"
     }
-},
-"required":["inter"]
-}
+  },
+  "required": ["id"]
 }
