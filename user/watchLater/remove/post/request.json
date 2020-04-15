@@ -1,0 +1,13 @@
+{
+  "type":"object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "content": {
+      "description": "This is the content of items",
+      "type": "string"
+    }
+  },
+  "required": ["id","content"]
+}

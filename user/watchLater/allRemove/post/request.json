@@ -1,0 +1,13 @@
+{
+  "type":"object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "removeAll": {
+      "description": "delete whole items",
+      "type": "boolean"
+    }
+  },
+  "required": ["id","removeAll"]
+}

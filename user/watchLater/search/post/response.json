@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "arrry",
+      "item": {
+        "title": {
+          "type": "string"
+        },
+        "content": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": ["items"]
+}
