@@ -1,9 +1,9 @@
 {
   "type": "object",
   "properties": {
-    "success": {
-      "type": "boolean"
+    "path": {
+      "type": "string"
     }
   },
-  "required": ["success"]
+  "required": ["path"]
 }
